@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/myStyle.css" />
+    <script
+      src="https://kit.fontawesome.com/e33f880c5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Password Generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>
+        Generate a <br />
+        <span class="accent-text">random password</span>
+      </h1>
+      <p>Never use an insecure password again.</p>
+      <button class="bg--accent generate-btn" onclick="renderPassword()">
+        <i class="fa-solid fa-bolt"></i> Generate passwords
+      </button>
+      <div class="password-legth-field">
+        <p>Password length :</p>
+        <input
+          type="number"
+          id="password-length"
+          class="password-length"
+          min="8"
+          max="20"
+        />
+      </div>
+      <hr class="line" style="border: 1px solid #2f3e53" />
+
+      <div class="password--section">
+        <input
+          type="text"
+          class="generated--password"
+          value=""
+          id="password-field-1"
+        />
+        <button class="copy-btn" id="copytext-1" onclick="copyFunction1()">
+          Copy Text
+        </button>
+        <input
+          type="text"
+          class="generated--password"
+          value=""
+          id="password-field-2"
+        />
+        <button class="copy-btn" id="copytext-2" onclick="copyFunction2()">
+          Copy Text
+        </button>
+        <input
+          type="text"
+          class="generated--password"
+          value=""
+          id="password-field-3"
+        />
+        <button class="copy-btn" id="copytext-3" onclick="copyFunction3()">
+          Copy Text
+        </button>
+        <input
+          type="text"
+          class="generated--password"
+          value=""
+          id="password-field-4"
+        />
+        <button class="copy-btn" id="copytext-4" onclick="copyFunction4()">
+          Copy Text
+        </button>
+      </div>
+
+      <footer><small>Created by Saurav Kumar Verma || 2022</small></footer>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

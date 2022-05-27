@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1c;
+}
+/*  font-family: 'Karla', sans-serif; */
+.accent-text {
+  color: #10b981;
+}
+
+.bg--accent {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.container {
+  width: 800px;
+  height: 120vh;
+
+  padding: 50px;
+
+  background-color: #1f2937;
+}
+
+.container h1 {
+  font-family: "Karla";
+
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+
+  letter-spacing: -0.025em;
+
+  color: #ffffff;
+}
+
+.container p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 10px;
+  color: #d5d4d8;
+}
+
+.generate-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+  gap: 12px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.generate-btn:hover,
+.generate-btn:focus {
+  opacity: 0.9;
+}
+
+.generated--password {
+  background: #273549;
+  border-radius: 6px;
+  color: #55f991;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px;
+  line-height: 32px;
+  border: none;
+}
+.password--section {
+  width: 100%;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr 100px;
+  gap: 25px;
+}
+.copy-btn {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #273549;
+  font-weight: 600;
+}
+.copy-btn:hover,
+.copy-btn:focus {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.password-length {
+  border-radius: 6px;
+
+  background-color: #273549;
+  color: #55f991;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 3px;
+
+  border: none;
+}
+
+.password-legth-field {
+  display: flex;
+}
+.password-legth-field p {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.line {
+  margin-top: 1rem;
+}
+
+footer {
+  padding-block: 20px;
+  text-align: center;
+  background-color: #1f2937;
+  color: #fff;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100vw;
+    height: 120vh;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  .password--section {
+    width: 100%;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 25px;
+  }
+  footer {
+    padding-block: 20px;
+    text-align: center;
+
+    color: #fff;
+    margin-top: 25px;
+  }
+}
